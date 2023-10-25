@@ -1,5 +1,12 @@
+import boadgame.Board;
+import chess.ChessMatch;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+        ChessMatch chessMatch = new ChessMatch();
+
+        System.out.println();
+        UI.printBoard(chessMatch.getPieces());
     }
 }
