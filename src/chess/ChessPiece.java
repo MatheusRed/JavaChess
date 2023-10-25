@@ -2,9 +2,8 @@ package chess;
 
 import boadgame.Board;
 import boadgame.Piece;
-import boadgame.Position;
 
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
 
   private Color color;
 
@@ -16,6 +15,5 @@ public class ChessPiece extends Piece {
   public Color getColor() {
     return color;
   }
-  
 
 }
