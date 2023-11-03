@@ -9,14 +9,19 @@ import chess.Color;
 public class Pawn extends ChessPiece {
 
   private ChessMatch chessMatch;
+  private boolean icon;
 
-  public Pawn(Board board, Color color, ChessMatch chessMatch) {
+  public Pawn(Board board, Color color, ChessMatch chessMatch, boolean icon) {
     super(board, color);
     this.chessMatch = chessMatch;
+    this.icon = icon;
   }
 
   @Override
   public String toString() {
+    if (icon == true) {
+      return "\udb82\udc59";
+    }
     return "P";
   }
 

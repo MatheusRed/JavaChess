@@ -7,12 +7,18 @@ import chess.Color;
 
 public class Queen extends ChessPiece {
 
-  public Queen(Board board, Color color) {
+  private boolean icon;
+
+  public Queen(Board board, Color color, boolean icon) {
     super(board, color);
+    this.icon = icon;
   }
 
   @Override
   public String toString() {
+    if (icon == true) {
+      return "\udb82\udc5a";
+    }
     return "Q";
   }
 

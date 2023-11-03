@@ -7,12 +7,18 @@ import chess.Color;
 
 public class Rook extends ChessPiece {
 
-  public Rook(Board board, Color color) {
+  private boolean icon;
+
+  public Rook(Board board, Color color, boolean icon) {
     super(board, color);
+    this.icon = icon;
   }
 
   @Override
   public String toString() {
+    if (icon == true) {
+      return "\udb82\udc5b";
+    }
     return "R";
   }
 

@@ -7,8 +7,11 @@ import chess.Color;
 
 public class Knight extends ChessPiece {
 
-  public Knight(Board board, Color color) {
+  private boolean icon;
+
+  public Knight(Board board, Color color, boolean icon) {
     super(board, color);
+    this.icon = icon;
   }
 
   private boolean canMove(Position position) {
@@ -19,6 +22,9 @@ public class Knight extends ChessPiece {
 
   @Override
   public String toString() {
+    if (icon == true) {
+      return "\udb82\udc58";
+    }
     return "N";
   }
 

@@ -9,10 +9,12 @@ import chess.Color;
 public class King extends ChessPiece {
 
   private ChessMatch chessMatch;
+  private boolean icon;
 
-  public King(Board board, Color color, ChessMatch chessMatch) {
+  public King(Board board, Color color, ChessMatch chessMatch, boolean icon) {
     super(board, color);
     this.chessMatch = chessMatch;
+    this.icon = icon;
   }
 
   private boolean canMove(Position position) {
@@ -31,6 +33,9 @@ public class King extends ChessPiece {
 
   @Override
   public String toString() {
+    if (icon == true) {
+      return "\ue260";
+    }
     return "K";
   }
 

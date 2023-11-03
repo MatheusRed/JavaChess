@@ -7,12 +7,18 @@ import chess.Color;
 
 public class Bishop extends ChessPiece {
 
-  public Bishop(Board board, Color color) {
+  private boolean icon;
+
+  public Bishop(Board board, Color color, boolean icon) {
     super(board, color);
+    this.icon = icon;
   }
 
   @Override
   public String toString() {
+    if (icon == true) {
+      return "\ue29c";
+    }
     return "B";
   }
 

@@ -9,8 +9,8 @@ You use a letter from 'a' to 'h' and them a number from '1' to '8', e.g: d2, h5,
 
 ## TODO
 
-  1. Use nerd font glyphs to show the pieces icons.
+  1. ~~Use nerd font glyphs to show the pieces icons~~
   
-  2. Give the player a option to choose between plain-text or nerd font.
+  2. ~~Give the player a option to choose between plain-text or nerd font.~~
 
   3. Make the board more readble to play.

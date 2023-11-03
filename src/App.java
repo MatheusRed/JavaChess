@@ -12,8 +12,18 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         Scanner read = new Scanner(System.in);
-        ChessMatch chessMatch = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
+        ChessMatch chessMatch;
+        UI.clearScreen();
+
+        System.out.println("Would you like to use Nerd Fonts? \ue659 (Y / N)  ");
+        String icon = read.nextLine();
+        if (icon.equals("Y")) {
+            chessMatch = new ChessMatch(true);
+            chessMatch.setIcon(true);
+        } else {
+            chessMatch = new ChessMatch();
+        }
 
         System.out.println();
 
